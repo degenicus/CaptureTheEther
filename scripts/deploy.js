@@ -5,8 +5,8 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
-    const Contract = await ethers.getContractFactory("Nickname");
-    const contract = await Contract.deploy("0x6CbA645c36F7165CaC812e8BC2aA5Ad7422f4912");
+    const Contract = await ethers.getContractFactory("GuessTheNumber");
+    const contract = await Contract.deploy("0xF17Ea45ad6bED42e703C3b2fBeCAb031F1f705d3");
   
     console.log("Contract address:", contract.address);
   }
